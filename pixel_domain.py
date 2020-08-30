@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 
 
-class Filter:
+class PixelDomain:
 
     def read(self, path):
         return cv.imread(path)

@@ -13,7 +13,7 @@ if 'IMG' not in os.environ:
 img_path = os.environ['IMG']
 
 if "METHOD" not in os.environ:
-    raise KeyError('Environment variable METHOD [raw,gray,negative,threshold,addition,subtraction] not defined.')
+    raise KeyError('Environment variable METHOD [raw,gray,weighted-gray,negative,threshold=int,addition,subtraction] not defined.')
 method = os.environ["METHOD"]
 
 pd = PixelDomain()
